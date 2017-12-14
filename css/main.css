@@ -1,0 +1,408 @@
+/*Bootstrap override*/
+.container{
+	width: 990px;
+}
+
+
+
+/* General Styles */
+
+body{
+	font-family: Arial;
+}
+
+h1{
+	font-family: Arial;
+}
+
+strong{
+	font-family: Arial;
+}
+
+a, a:hover, a:link, a:active, a:visited{
+	text-decoration: none;
+}
+
+p {
+	color: #fff;
+}
+
+.img-responsive{
+	margin: auto;
+}
+
+.form-control{
+	background: #f2f2f2;
+	border: 0px;
+}
+
+
+
+
+/*Margins, paddings*/
+.mtop{
+	margin-top: 20px;
+}
+
+
+
+
+/*Jumbotron*/
+.jumbotron{
+	padding: 50px 0 0;
+	background-image: url(../img/main-bg.jpg);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	background-color: #e2dfda;
+	margin:0px;
+}
+
+.jumbotron p{
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+.jumbotron  h2{
+	font-family: Arial;
+	margin-top: 0px;
+	color: white;
+	line-height: 63px;
+	font-weight: normal;
+	font-size: 51px;
+    font-weight: bold;
+}
+
+.max-container {
+	width: 90%;
+	margin: auto;
+}
+
+
+/*Main content*/
+.main-content{
+	padding-bottom:20px;
+	position: relative;
+	height: 438px;
+}
+
+.main-img{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+#wookiee {
+    position: absolute;
+    z-index: 9;
+    left: 0px;
+    top: 305px;
+    opacity: 0;
+}
+
+
+/*Right Column*/
+.caja-logo{
+	padding:26px 10px;
+}
+
+.caja-blanca{
+	background-color: #000000;
+	padding:13px 20px;
+	position: absolute;
+    width: 330px;
+    z-index: 99;
+}
+
+.caja-blanca h4 {
+	color: white;
+}
+
+.caja-blanca strong{
+	font-size: 17px;
+}
+
+input.SWbutton {
+    background: red;
+    border: none;
+    padding: 3px 0;
+    width: 49%;
+    border-radius: 4px;
+    font-size: 21px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#planetsResults {
+    position: absolute;
+    top: 345px;
+    display: inline-block;
+    margin:  auto;
+    text-align: center;
+}
+
+#planet {
+	margin-bottom: 15px;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    background: black;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+#planet p {
+	font-size: 12px;
+}
+
+#wookieeResults {
+    position: absolute;
+    top: 62px;
+    left: 236px;
+    z-index: 999;
+    max-width: 176px;
+
+}
+
+#wookieeResults p {
+    color: #000;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.numero-grande{
+	color: #fb1800;
+	font-family: Arial;
+	font-size: 40px;
+	line-height: 40px;
+	text-decoration: none;
+}
+
+.numero-grande:hover{
+	color: #fb1800;
+}
+
+p.prefieres{
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	font-size: 18px;
+	margin: 10px 0px 10px;
+}
+
+form h3 {
+	font-family: Arial;
+	color: black;
+	border: 1px solid #fb1800;
+	margin: 0px auto 10px;
+	padding: 10px;
+	font-size: 26px;
+}
+
+form h4{
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+form h3 img.icono{
+	margin-right: 10px;
+}
+
+.btn-formulario{
+    background-color: #a1e614;
+    color: white;
+    font-family: Arial;
+    font-size: 23px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    margin-top: 10px;
+}
+
+.btn-formulario img.icono{
+	margin-left: 10px;
+}
+
+.btn-formulario:hover{
+	color: white;
+}
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+	padding-bottom: 20px;
+	background-color: white;
+}
+
+footer h2 {
+    font-family: Arial;
+    color: black;
+    font-size: 38px;
+    font-weight: bolder;
+    font-variant: petite-caps;
+    text-align: center;
+}
+
+footer h2 strong {
+	font-weight: 900;
+}
+
+footer p strong {
+	font-size: 28px;
+	line-height: 26px;
+}
+
+.detalles li{
+	position: relative;
+	margin: 0px 10px;
+	width: 136px;
+	font-size: 13px;
+}
+
+.detalles li:after{
+	content: '+';
+	position: absolute;
+	top: 50%;
+	right: -26px;
+	font-size: 50px;
+	line-height: 50px;
+	font-family: Arial;
+	margin-top: -50px;
+}
+
+.detalles li:last-child:after{
+	display: none;
+}
+
+.detalles li img{
+	display: block;
+	max-width: 100%;
+	margin: 0px auto 10px;
+}
+
+
+
+/* =========================================
+				RESPONSIVE
+==========================================*/
+
+
+
+@media(max-width: 990px){
+	.container{
+		width: 100%;
+	}
+
+	.header-mobile{
+		background-color: white;
+		height: 55px;
+	}
+
+	.header-mobile .container{
+		padding: 0px;
+	}
+
+	.header-mobile .row{
+		padding: 0px;
+	}
+
+	.header-mobile .col-xs-6{
+		padding: 0px;
+	}
+
+	.fb-header-mobile{
+		font-size: 11px;
+		line-height: 15px;
+		padding-left: 49px;
+		padding-top: 6px;
+		background-image: url(../img/logo-fb.png);
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+		background-size: 40px;
+		height: 40px;
+		margin: 7px 0px 0px 10px;
+	}
+
+}
+
+@media(max-width: 768px){
+	.bg-rojo{
+		background-color: #fb1800;
+		height:55px;
+		text-align: center;
+		padding: 19px 10px;
+	}
+
+	#logomobile{
+		width: 140px;
+	}
+
+	.jumbotron{
+		background-image: none;
+		background-position: top center;
+	}
+
+	.jumbotron .container{
+		padding: 0px;
+	}
+
+	.jumbotron .col-md-8{
+		padding:0px;
+	}
+
+	.cuadro-top{
+		background-color: #a49e8d;
+	}
+
+	.telefono-mobile{
+		display: inline-block;
+		padding: 10px;
+		background-color: white;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		border-radius: 7px;
+	}
+
+	.telefono-mobile span.tel{
+		color: #fb1800;
+		font-family: Arial;
+		font-size: 33px;
+		line-height: 31px;
+		vertical-align: middle;
+	}
+
+	.no-padding-xs{
+		padding:0px;
+	}
+
+	.btn-formulario{
+		margin-top: 10px;
+		font-size: 27px;
+	}
+
+	.detalles{
+		margin-top:20px;
+	}
+
+	.detalles li{
+		width: 49%;
+		margin: 0px;
+		padding: 0px;
+		height: 155px;
+	}
+
+	.detalles li img{
+		width: 77px;
+	}
+
+	.detalles li:after{
+		display: none;
+	}
+
+}
