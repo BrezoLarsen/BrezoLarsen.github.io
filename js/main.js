@@ -164,7 +164,7 @@ searchButton.addEventListener('click', function(event) {
 
         event.preventDefault();
 
-        const wookieeStyle = document.getElementById("wookiee");
+        let wookieeStyle = document.getElementById("wookiee");
         // Toggle style of wookiee image for appear & disappear
         if(wookieeStyle.style.top === "20px") {
           wookieeStyle.style.top = "305px";
@@ -172,10 +172,10 @@ searchButton.addEventListener('click', function(event) {
           wookieeStyle.style.top = "20px";
         }
 
-        if(wookieeStyle.style.opacity === "1") {
-          wookieeStyle.style.opacity = "0";
-        } else {
+        if(wookieeStyle.style.opacity === "0") {
           wookieeStyle.style.opacity = "1";
+        } else {
+          wookieeStyle.style.opacity = "0";
         }
 
       })
