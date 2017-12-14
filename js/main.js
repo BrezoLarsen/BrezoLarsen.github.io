@@ -137,6 +137,9 @@ searchButton.addEventListener('click', function(event) {
 
           }();
 
+          let wookieeStyle = document.getElementById("wookiee");
+          wookieeStyle.style.visibility = "visible";
+
           // Una vez ejecutada, seteamos la variable a false para que al darle una segunda vez al botón no siga el mismo comportamiento
           showWookieeData = false;
 
@@ -147,6 +150,7 @@ searchButton.addEventListener('click', function(event) {
             // Como es false, ejecutará esta nueva función que hará que desaparezcan los datos
             let hiddenWookie = document.getElementById("wookieeResults");
             hiddenWookie.innerHTML = "";
+            wookieeStyle.style.visibility = "hidden";
 
             // Seteamos la variable a true para que al darle al botón reaparezcan los datos
             showWookieeData = true;
@@ -160,9 +164,7 @@ searchButton.addEventListener('click', function(event) {
 
 
       // Wookiee image appears
-      wookieeTranslate.addEventListener('click', function(event) {
-
-        event.preventDefault();
+      /*wookieeTranslate.addEventListener('click', function(event) {
 
         let wookieeStyle = document.getElementById("wookiee");
         // Toggle style of wookiee image for appear & disappear
@@ -178,7 +180,7 @@ searchButton.addEventListener('click', function(event) {
           wookieeStyle.style.opacity = "0";
         }
 
-      })
+      })*/
 
     })
 
